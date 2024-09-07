@@ -32,9 +32,10 @@ The primary users of this system are scientific researchers and engineers applyi
 - Compare citation counts to field medians to establish significance.
 - Count patents and other non-traditional publications.
 - Label extraordinary achievements in each category for final evaluation.
+- Metrics and metrics combinations can build a portfolio to support one of the 8 categories.
 
 ### O1A Category Assessment
-- Evaluate across 8 categories: Awards, Membership, Press, Judging, Original contribution, Scholarly articles, Critical employment, High remuneration.
+- Evaluate across 8 categories: Awards, Membership, Press, Judging, Original contribution, Scholarly articles, Critical employment, High remuneration, by metrics and combinations from the previous step.
 - Provide a rating (low, medium, high) with supporting data and justification for each category.
 - Emphasize the need for strong evidence in at least 3 categories.
 
@@ -128,15 +129,15 @@ A formatted summary of the entire evaluation, including:
 
 ## Using the Output
 
-1. **Quick Assessment**: Refer to the `overall_rating` and `qualifying_achievements` for a rapid evaluation of the applicant's suitability.
+1. **Quick Assessment**: Refer to the `overall_rating` and `qualifying_achievements` for a rapid evaluation of the applicant's suitability. Personas: applicant and attorney
 
-2. **Detailed Review**: Examine the `o1a_evaluation` section for in-depth analysis of each category.
+2. **Detailed Review**: Examine the `o1a_evaluation` section for in-depth analysis of each category. Personas: applicant and attorney. 
 
-3. **Supporting Documentation**: Use the `insights` and `markdown_summary` sections to draft support letters or prepare application materials.
+3. **Supporting Documentation**: Use the `insights` and `markdown_summary` sections to draft support letters or prepare application materials. Personas: attorney
 
-4. **Identifying Strengths and Weaknesses**: Review individual category ratings to identify areas where the application is strongest and where it might need additional support.
+4. **Identifying Strengths and Weaknesses**: Review individual category ratings to identify areas where the application is strongest and where it might need additional support. Personas: applicant.
 
-5. **Data Verification**: Cross-reference the `raw_data` section with the original CV to ensure accuracy and completeness.
+5. **Data Verification**: Cross-reference the `raw_data` section with the original CV to ensure accuracy and completeness. Personas: applicant and attorney.
 
 By thoroughly reviewing each section of the output JSON, users can gain a comprehensive understanding of the applicant's qualifications and make informed decisions regarding their O1A visa application.
 
