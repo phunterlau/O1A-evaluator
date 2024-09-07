@@ -1,0 +1,758 @@
+{
+  "raw_data": {
+    "name": "Yann André LeCun",
+    "email": "",
+    "education": [
+      {
+        "school": "Université Pierre et Marie Curie (now Sorbonne University)",
+        "year": 1987,
+        "degree": "PhD in Computer Science",
+        "extraordinary": "yes"
+      },
+      {
+        "school": "ESIEE Paris",
+        "year": 1983,
+        "degree": "Diplôme d'Ingénieur",
+        "extraordinary": "yes"
+      }
+    ],
+    "awards": [
+      {
+        "award": "Turing Award",
+        "year": 2018,
+        "extraordinary": "yes"
+      },
+      {
+        "award": "IEEE Neural Network Pioneer Award",
+        "year": 2014,
+        "extraordinary": "yes"
+      },
+      {
+        "award": "PAMI Distinguished Researcher Award",
+        "year": 2015,
+        "extraordinary": "no"
+      },
+      {
+        "award": "IRI Medal",
+        "year": 2018,
+        "extraordinary": "no"
+      },
+      {
+        "award": "Harold Pender Award, University of Pennsylvania",
+        "year": 2018,
+        "extraordinary": "no"
+      },
+      {
+        "award": "Golden Plate Award, American Academy of Achievement",
+        "year": 2019,
+        "extraordinary": "no"
+      },
+      {
+        "award": "Princess of Asturias Award for Scientific Research",
+        "year": 2022,
+        "extraordinary": "yes"
+      },
+      {
+        "award": "Chevalier (Knight) of the French Legion of Honour",
+        "year": 2023,
+        "extraordinary": "yes"
+      },
+      {
+        "award": "Global Swiss AI Award",
+        "year": 2024,
+        "extraordinary": "no"
+      }
+    ],
+    "academic_membership": [
+      "Member, US National Academy of Sciences",
+      "Member, US National Academy of Engineering",
+      "Member, French Académie des Sciences"
+    ],
+    "publications": [
+      {
+        "title": "Deep Learning",
+        "venue": "",
+        "year": 2015,
+        "citation_count": 40972,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Gradient-based learning applied to document recognition",
+        "venue": "Proceedings of the IEEE",
+        "year": 1998,
+        "citation_count": 49193,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Backpropagation Applied to Handwritten Zip Code Recognition",
+        "venue": "Neural Computation",
+        "year": 1989,
+        "citation_count": 10428,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Convolutional networks for images, speech, and time series",
+        "venue": "",
+        "year": 1998,
+        "citation_count": 5444,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "The mnist database of handwritten digits",
+        "venue": "",
+        "year": 2005,
+        "citation_count": 6315,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "OverFeat: Integrated Recognition, Localization and Detection using Convolutional Networks",
+        "venue": "International Conference on Learning Representations",
+        "year": 2013,
+        "citation_count": 4894,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Efficient BackProp",
+        "venue": "Neural Networks",
+        "year": 2012,
+        "citation_count": 3108,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Character-level Convolutional Networks for Text Classification",
+        "venue": "Neural Information Processing Systems",
+        "year": 2015,
+        "citation_count": 5485,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Handwritten Digit Recognition with a Back-Propagation Network",
+        "venue": "Neural Information Processing Systems",
+        "year": 1989,
+        "citation_count": 3856,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Spectral Networks and Locally Connected Networks on Graphs",
+        "venue": "International Conference on Learning Representations",
+        "year": 2013,
+        "citation_count": 4536,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Dimensionality Reduction by Learning an Invariant Mapping",
+        "venue": "Computer Vision and Pattern Recognition",
+        "year": 2006,
+        "citation_count": 4793,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Optimal Brain Damage",
+        "venue": "Neural Information Processing Systems",
+        "year": 1989,
+        "citation_count": 4448,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Learning a similarity metric discriminatively, with application to face verification",
+        "venue": "Computer Vision and Pattern Recognition",
+        "year": 2005,
+        "citation_count": 4000,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Signature Verification Using A \"Siamese\" Time Delay Neural Network",
+        "venue": "International journal of pattern recognition and artificial intelligence",
+        "year": 1993,
+        "citation_count": 3649,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "MNIST handwritten digit database",
+        "venue": "",
+        "year": 2010,
+        "citation_count": 0,
+        "extraordinary": "no"
+      },
+      {
+        "title": "Geometric Deep Learning: Going beyond Euclidean data",
+        "venue": "IEEE Signal Processing Magazine",
+        "year": 2016,
+        "citation_count": 2976,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Learning Hierarchical Features for Scene Labeling",
+        "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+        "year": 2013,
+        "citation_count": 2669,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "A Closer Look at Spatiotemporal Convolutions for Action Recognition",
+        "venue": "2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+        "year": 2017,
+        "citation_count": 2674,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Regularization of Neural Networks using DropConnect",
+        "venue": "International Conference on Machine Learning",
+        "year": 2013,
+        "citation_count": 2440,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "What is the best multi-stage architecture for object recognition?",
+        "venue": "IEEE International Conference on Computer Vision",
+        "year": 2009,
+        "citation_count": 2293,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Convolutional networks and applications in vision",
+        "venue": "Proceedings of 2010 IEEE International Symposium on Circuits and Systems",
+        "year": 2010,
+        "citation_count": 1925,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Deep multi-scale video prediction beyond mean square error",
+        "venue": "International Conference on Learning Representations",
+        "year": 2015,
+        "citation_count": 1816,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Barlow Twins: Self-Supervised Learning via Redundancy Reduction",
+        "venue": "International Conference on Machine Learning",
+        "year": 2021,
+        "citation_count": 1888,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Learning Fast Approximations of Sparse Coding",
+        "venue": "International Conference on Machine Learning",
+        "year": 2010,
+        "citation_count": 1607,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Exploiting Linear Structure Within Convolutional Networks for Efficient Evaluation",
+        "venue": "Neural Information Processing Systems",
+        "year": 2014,
+        "citation_count": 1611,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Deep Convolutional Networks on Graph-Structured Data",
+        "venue": "arXiv.org",
+        "year": 2015,
+        "citation_count": 1514,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Joint Training of a Convolutional Network and a Graphical Model for Human Pose Estimation",
+        "venue": "Neural Information Processing Systems",
+        "year": 2014,
+        "citation_count": 1468,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Learning methods for generic object recognition with invariance to pose and lighting",
+        "venue": "Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition, 2004. CVPR 2004.",
+        "year": 2004,
+        "citation_count": 1496,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "A Theoretical Analysis of Feature Pooling in Visual Recognition",
+        "venue": "International Conference on Machine Learning",
+        "year": 2010,
+        "citation_count": 1277,
+        "extraordinary": "yes"
+      },
+      {
+        "title": "Efficient Learning of Sparse Representations with an Energy-Based Model",
+        "venue": "Neural Information Processing Systems",
+        "year": 2006,
+        "citation_count": 1307,
+        "extraordinary": "yes"
+      }
+    ],
+    "patents": [],
+    "licenses": [],
+    "copyrights": [],
+    "h_index": null,
+    "major_awards": [
+      {
+        "award": "Turing Award",
+        "year": 2018
+      }
+    ],
+    "association_memberships": [],
+    "conference_activities": [],
+    "major_contributions": [
+      "Convolutional Neural Networks (CNNs)",
+      "Backpropagation learning algorithm",
+      "DjVu image compression technology",
+      "Graph Transformer Networks"
+    ],
+    "media_coverage": [
+      {
+        "media_name": "New York Times",
+        "media_domain": "nytimes.com",
+        "title": "Facebook's Yann LeCun Discusses Digital Companions and Artificial Intelligence (and Emotions)",
+        "url_source": "https://bits.blogs.nytimes.com/2015/03/26/facebooks-yann-lecun-discusses-digital-companions-and-artificial-intelligence/",
+        "description": "The head of Facebook’s Artificial Intelligence Lab foresees a day when we all have artificial helpers that understand us, all of the information in the world, and what we need to know next.",
+        "published_time": "1427362242",
+        "extraordinary": "yes"
+      },
+      {
+        "media_name": "Washington Post",
+        "media_domain": "washingtonpost.com",
+        "title": "Shake-up at Facebook highlights tension in race for AI",
+        "url_source": "https://www.washingtonpost.com/business/economy/shake-up-at-facebook-highlights-tension-in-race-for-ai/2018/01/24/5d21239a-0138-11e8-9d31-d72cf78dbeee_story.html",
+        "description": "Facebook, looking to artificial intelligence to help solve its problem, is racing to keep up with rivals.",
+        "published_time": "2018-01-25T00:56:10.000Z",
+        "extraordinary": ""
+      },
+      {
+        "media_name": "Wall Street Journal",
+        "media_domain": "wsj.com",
+        "title": "Facebook AI Chief Pushes the Technology’s Limits - WSJ",
+        "url_source": "https://www.wsj.com/articles/facebook-ai-chief-pushes-the-technologys-limits-11597334361",
+        "description": "<strong>Yann</strong> <strong>LeCun</strong> is one of a handful of scientists at companies and universities world-wide training artificial intelligence to better learn by itself.",
+        "published_time": "",
+        "extraordinary": ""
+      },
+      {
+        "media_name": "CNN",
+        "media_domain": "cnn.com",
+        "title": "Facebook exec says the social network would be ‘dust’ without AI | CNN Business",
+        "url_source": "https://www.cnn.com/2018/12/05/tech/ai-facebook-lecun/index.html",
+        "description": "Without artificial intelligence, there wouldn’t be much left of how we know and use Facebook today.",
+        "published_time": "2018-12-05T16:59:13Z",
+        "extraordinary": "yes"
+      }
+    ],
+    "employment_history": [
+      {
+        "organization": "New York University",
+        "role": "Silver Professor, Courant Institute of Mathematical Sciences",
+        "year_start": 2003,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "New York University",
+        "role": "Professor, Center for Neural Science",
+        "year_start": null,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "New York University",
+        "role": "Professor, Tandon School of Engineering",
+        "year_start": null,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "NYU Center for Data Science",
+        "role": "Founding Director",
+        "year_start": 2012,
+        "year_end": 2014,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "Collège de France, Paris",
+        "role": "Visiting Professor",
+        "year_start": 2016,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "New York University",
+        "role": "Jacob T. Schwartz Chaired Professor in Computer Science, NYU's Courant Institute",
+        "year_start": 2023,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "Meta (formerly Facebook)",
+        "role": "Vice-President and Chief AI Scientist",
+        "year_start": 2013,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "Meta AI Research",
+        "role": "Head of AI Research",
+        "year_start": 2013,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "NEC Research Institute, Princeton, NJ",
+        "role": "Fellow",
+        "year_start": null,
+        "year_end": null,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "AT&T Labs-Research",
+        "role": "Department Head, Image Processing Research",
+        "year_start": 1996,
+        "year_end": 2002,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      },
+      {
+        "organization": "AT&T Bell Laboratories",
+        "role": "Member of Technical Staff, Adaptive Systems Research Department",
+        "year_start": 1988,
+        "year_end": 1996,
+        "is_critical_capacity": true,
+        "extraordinary": ""
+      }
+    ],
+    "highest_salary": null,
+    "predicted_research_fields": [
+      "Artificial Intelligence",
+      "Machine Learning",
+      "Computer Vision",
+      "Neural Networks",
+      "Deep Learning",
+      "Image Processing",
+      "Pattern Recognition",
+      "Robotics",
+      "Computational Neuroscience"
+    ]
+  },
+  "o1a_evaluation": {
+    "name": "Yann André LeCun",
+    "email": "",
+    "education": [
+      {
+        "school": "Université Pierre et Marie Curie (now Sorbonne University)",
+        "year": 1987,
+        "degree": "PhD in Computer Science",
+        "extraordinary": "yes"
+      },
+      {
+        "school": "ESIEE Paris",
+        "year": 1983,
+        "degree": "Diplôme d'Ingénieur",
+        "extraordinary": "yes"
+      }
+    ],
+    "category_ratings": [
+      {
+        "category": "Awards",
+        "rating": "high",
+        "justification": "The applicant has received multiple prominent awards indicating a high level of achievement in their field. Specifically, they have won the Turing Award and the Princess of Asturias Award for Scientific Research, both of which are acknowledged as extraordinary. Additionally, the IEEE Neural Network Pioneer Award and the Chevalier (Knight) of the French Legion of Honour further underline their accomplishments. These awards demonstrate sustained national and international recognition, fulfilling a crucial requirement for the O-1A visa category.",
+        "information_used": [
+          "Turing Award (2018)",
+          "IEEE Neural Network Pioneer Award (2014)",
+          "Princess of Asturias Award for Scientific Research (2022)",
+          "Chevalier (Knight) of the French Legion of Honour (2023)"
+        ],
+        "information_unused": [
+          "PAMI Distinguished Researcher Award (2015)",
+          "IRI Medal (2018)",
+          "Harold Pender Award, University of Pennsylvania (2018)",
+          "Golden Plate Award, American Academy of Achievement (2019)",
+          "Global Swiss AI Award (2024)",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Membership",
+        "rating": "high",
+        "justification": "The applicant is a member of three prestigious institutions: the US National Academy of Sciences, the US National Academy of Engineering, and the French Académie des Sciences. Membership in these organizations is highly selective and recognizes individuals who have made significant contributions to science and engineering. This demonstrates a level of expertise and achievement that aligns with the 'extraordinary ability' standard required for an O-1A visa.",
+        "information_used": [
+          "Member, US National Academy of Sciences",
+          "Member, US National Academy of Engineering",
+          "Member, French Académie des Sciences"
+        ],
+        "information_unused": [
+          "publications",
+          "media coverage",
+          "employment",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Press",
+        "rating": "high",
+        "justification": "The applicant is mentioned in several high-profile media outlets: New York Times, Washington Post, Wall Street Journal, and CNN. The 'extraordinary' label is present in two instances, specifically in articles from the New York Times and CNN, which implies a high citation count, venue reputation, or significant coverage. These indicators suggest that the applicant has garnered substantial media attention and recognition, fulfilling the criteria for extraordinary ability in the context of media coverage.",
+        "information_used": [
+          "New York Times article with 'extraordinary' label",
+          "Washington Post article",
+          "Wall Street Journal article",
+          "CNN article with 'extraordinary' label"
+        ],
+        "information_unused": [
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Judging",
+        "rating": "low",
+        "justification": "The evaluation for the Judging category is based on the applicant's participation as a judge of the work of others in the field. Since no relevant data has been provided regarding the applicant's judging activities, there is no evidence to support that the applicant has served in such a capacity. Therefore, based solely on the provided information, the applicant's chances of qualifying for the O-1A visa under the Judging criterion are low.",
+        "information_used": [],
+        "information_unused": [
+          "publications and media coverage",
+          "employment",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Original contribution",
+        "rating": "high",
+        "justification": "The applicant's contributions include foundational advancements in Convolutional Neural Networks (CNNs), the Backpropagation learning algorithm, DjVu image compression technology, and Graph Transformer Networks. These technologies are highly influential in the fields of artificial intelligence, machine learning, and image processing. Each of these contributions is widely recognized within the academic and professional communities, denoting a significant original impact. The mention of these specific contributions suggests the applicant has made substantiated and extraordinary advances in their field.",
+        "information_used": [
+          "Convolutional Neural Networks (CNNs)",
+          "Backpropagation learning algorithm",
+          "DjVu image compression technology",
+          "Graph Transformer Networks"
+        ],
+        "information_unused": [
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Scholarly articles",
+        "rating": "high",
+        "justification": "The applicant has a robust portfolio of scholarly articles, many of which have high citation counts and are marked as extraordinary. The papers 'Deep Learning' and 'Gradient-based learning applied to document recognition' have over 40,000 citations each, indicating significant influence and recognition in their field. Other publications, such as 'Backpropagation Applied to Handwritten Zip Code Recognition,' 'Character-level Convolutional Networks for Text Classification,' and 'Dimensionality Reduction by Learning an Invariant Mapping' also have substantial citation counts, showcasing the applicant's significant contribution to the academic community. The predominance of articles labeled as extraordinary further supports the applicant's high standing in the field, meeting the O-1A visa criteria for extraordinary ability in scholarly articles.",
+        "information_used": [
+          "Deep Learning",
+          "Gradient-based learning applied to document recognition",
+          "Backpropagation Applied to Handwritten Zip Code Recognition",
+          "Character-level Convolutional Networks for Text Classification",
+          "Dimensionality Reduction by Learning an Invariant Mapping",
+          "Most other articles marked as extraordinary"
+        ],
+        "information_unused": [
+          "MNIST handwritten digit database (2010)",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "Critical employment",
+        "rating": "high",
+        "justification": "The applicant has held critical roles in prestigious organizations, including New York University, where they have served in multiple critical capacities such as Silver Professor at the Courant Institute of Mathematical Sciences, Professor at the Center for Neural Science, and Professor at the Tandon School of Engineering. They have also been the Founding Director of the NYU Center for Data Science and currently hold the Jacob T. Schwartz Chaired Professor in Computer Science position. In addition, their roles at Meta (formerly Facebook) as Vice-President and Chief AI Scientist and Head of AI Research underscore their impact in the field of AI. The applicant also has critical roles at renowned research institutions like NEC Research Institute and AT&T Laboratories. The consistency of critical capacity roles across top-tier institutions in academia and industry strongly indicates that the applicant qualifies for the O-1A visa in the Critical employment category.",
+        "information_used": [
+          "New York University - Silver Professor, Courant Institute of Mathematical Sciences",
+          "New York University - Professor, Center for Neural Science",
+          "New York University - Professor, Tandon School of Engineering",
+          "NYU Center for Data Science - Founding Director",
+          "New York University - Jacob T. Schwartz Chaired Professor in Computer Science, NYU's Courant Institute",
+          "Meta - Vice-President and Chief AI Scientist",
+          "Meta AI Research - Head of AI Research",
+          "NEC Research Institute - Fellow",
+          "AT&T Labs-Research - Department Head, Image Processing Research",
+          "AT&T Bell Laboratories - Member of Technical Staff, Adaptive Systems Research Department"
+        ],
+        "information_unused": [
+          "Extraordinary publication and media coverage",
+          "Collège de France, Paris - Visiting Professor",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      },
+      {
+        "category": "High remuneration",
+        "rating": "low",
+        "justification": "There is no specific information provided about the applicant's remuneration. The given data for High remuneration is null, which means we have no basis to evaluate whether the applicant receives high remuneration or stands out in this regard compared to peers in their field. As a criterion for the O-1A visa, high remuneration needs clear evidence to support the claim of extraordinary ability or significant achievement, which is absent in this case.",
+        "information_used": [],
+        "information_unused": [
+          "publications and media coverage",
+          "employment",
+          "name",
+          "email",
+          "education",
+          "awards",
+          "academic_membership",
+          "publications",
+          "patents",
+          "licenses",
+          "copyrights",
+          "h_index",
+          "major_awards",
+          "association_memberships",
+          "conference_activities",
+          "major_contributions",
+          "media_coverage",
+          "employment_history",
+          "highest_salary",
+          "predicted_research_fields"
+        ]
+      }
+    ]
+  },
+  "qualifying_achievements": [
+    "Turing Award (2018)",
+    "IEEE Neural Network Pioneer Award (2014)",
+    "Princess of Asturias Award for Scientific Research (2022)",
+    "Chevalier (Knight) of the French Legion of Honour (2023)",
+    "Member, US National Academy of Sciences",
+    "Member, US National Academy of Engineering",
+    "Member, French Académie des Sciences",
+    "New York Times article with 'extraordinary' label",
+    "Washington Post article",
+    "Wall Street Journal article",
+    "CNN article with 'extraordinary' label",
+    "Convolutional Neural Networks (CNNs)",
+    "Backpropagation learning algorithm",
+    "DjVu image compression technology",
+    "Graph Transformer Networks",
+    "Deep Learning",
+    "Gradient-based learning applied to document recognition",
+    "Backpropagation Applied to Handwritten Zip Code Recognition",
+    "Character-level Convolutional Networks for Text Classification",
+    "Dimensionality Reduction by Learning an Invariant Mapping",
+    "Most other articles marked as extraordinary",
+    "New York University - Silver Professor, Courant Institute of Mathematical Sciences",
+    "New York University - Professor, Center for Neural Science",
+    "New York University - Professor, Tandon School of Engineering",
+    "NYU Center for Data Science - Founding Director",
+    "New York University - Jacob T. Schwartz Chaired Professor in Computer Science, NYU's Courant Institute",
+    "Meta - Vice-President and Chief AI Scientist",
+    "Meta AI Research - Head of AI Research",
+    "NEC Research Institute - Fellow",
+    "AT&T Labs-Research - Department Head, Image Processing Research",
+    "AT&T Bell Laboratories - Member of Technical Staff, Adaptive Systems Research Department"
+  ],
+  "overall_rating": "high",
+  "insights": "## Yann André LeCun: Extraordinary Research Capabilities and Contributions\n\n### Educational Background\nYann LeCun holds a PhD in Computer Science from Université Pierre et Marie Curie (1987) and a Diplôme d'Ingénieur from ESIEE Paris (1983). Both qualifications are marked by extraordinary academic performance, reflecting a robust foundation in computational theory and practice.\n\n### Awards and Recognitions\nLeCun's accolades include the prestigious Turing Award in 2018, akin to the Nobel Prize in computer science, recognizing his transformative contributions to deep learning and neural networks. Notably, he also received the IEEE Neural Network Pioneer Award (2014) and the Chevalier (Knight) of the French Legion of Honour (2023), among others. These awards underscore his substantial impact on the field of artificial intelligence.\n\n### Academic Memberships\nLeCun is a respected member of three major academies: the US National Academy of Sciences, the US National Academy of Engineering, and the French Académie des Sciences. These memberships highlight his high regard in the global scientific community.\n\n### Employment History\nLeCun has held key positions at several prestigious institutions:\n- **New York University**: Silver Professor, Jacob T. Schwartz Chaired Professor, Founding Director of NYU's Center for Data Science.\n- **Meta**: Vice-President and Chief AI Scientist, Head of AI Research.\n- **Collège de France, Paris**: Visiting Professor.\n- **NEC Research Institute, Princeton**: Fellow.\n- **AT&T Labs-Research**: Department Head of Image Processing Research.\n- **AT&T Bell Laboratories**: Member of Technical Staff.\n\nHis career trajectory reveals an extensive involvement in both academia and corporate research, fostering important collaborations and advancements in artificial intelligence.\n\n### Groundbreaking Publications\nLeCun's publication record is remarkable, with numerous highly-cited works:\n- \"Deep Learning\" (2015): 40,972 citations.\n- \"Gradient-based learning applied to document recognition\" (1998): 49,193 citations.\n- \"Backpropagation Applied to Handwritten Zip Code Recognition\" (1989): 10,428 citations.\n\nThese publications spotlight his pioneering roles in developing convolutional neural networks (CNNs) and the backpropagation learning algorithm, foundational to modern AI.\n\n### Major Contributions\nLeCun's contributions span several critical areas:\n- **Convolutional Neural Networks (CNNs)**: Central to image and video recognition, revolutionizing how machines learn visual data.\n- **Backpropagation Algorithm**: Facilitated efficient training of deep neural networks.\n- **DjVu Image Compression Technology**: Advanced image file compression, enabling efficient digital image storage and transmission.\n- **Graph Transformer Networks**: Pioneering neural network architectures for graph data, impacting numerous domains.\n\n### Media Coverage\nLeCun's work has been prominently featured in major media outlets such as the New York Times, Washington Post, Wall Street Journal, and CNN. This extensive coverage amplifies his public profile, highlighting his influence on AI at major tech firms like Facebook, and underlining the societal and technological impacts of his research.\n\n### Overall Impact\nLeCun's multidisciplinary influence spans artificial intelligence, machine learning, computer vision, neural networks, and beyond. His pioneering research, esteemed academic roles, and significant public recognition position him as a transformative figure in computer science. His work not only drives academic and corporate innovation but also shapes public perception and policy in AI.\n\nIn summary, Yann LeCun's extraordinary capabilities and contributions have left an indelible mark on multiple research fields and continue to shape the future of artificial intelligence.",
+  "markdown_summary": "# O1A Visa Evaluation Summary for Yann André LeCun\n\n## Applicant Information\n- Name: Yann André LeCun\n- Email: \n\n## Education\n- PhD in Computer Science from Université Pierre et Marie Curie (now Sorbonne University) (1987)\n- Diplôme d'Ingénieur from ESIEE Paris (1983)\n\n## Overall O-1A Qualification Rating: HIGH\n\n## Qualifying Achievements\n- \"Turing Award (2018)\"\n- \"IEEE Neural Network Pioneer Award (2014)\"\n- \"Princess of Asturias Award for Scientific Research (2022)\"\n- \"Chevalier (Knight) of the French Legion of Honour (2023)\"\n- \"Member, US National Academy of Sciences\"\n- \"Member, US National Academy of Engineering\"\n- \"Member, French Acad\\u00e9mie des Sciences\"\n- \"New York Times article with 'extraordinary' label\"\n- \"Washington Post article\"\n- \"Wall Street Journal article\"\n- \"CNN article with 'extraordinary' label\"\n- \"Convolutional Neural Networks (CNNs)\"\n- \"Backpropagation learning algorithm\"\n- \"DjVu image compression technology\"\n- \"Graph Transformer Networks\"\n- \"Deep Learning\"\n- \"Gradient-based learning applied to document recognition\"\n- \"Backpropagation Applied to Handwritten Zip Code Recognition\"\n- \"Character-level Convolutional Networks for Text Classification\"\n- \"Dimensionality Reduction by Learning an Invariant Mapping\"\n- \"Most other articles marked as extraordinary\"\n- \"New York University - Silver Professor, Courant Institute of Mathematical Sciences\"\n- \"New York University - Professor, Center for Neural Science\"\n- \"New York University - Professor, Tandon School of Engineering\"\n- \"NYU Center for Data Science - Founding Director\"\n- \"New York University - Jacob T. Schwartz Chaired Professor in Computer Science, NYU's Courant Institute\"\n- \"Meta - Vice-President and Chief AI Scientist\"\n- \"Meta AI Research - Head of AI Research\"\n- \"NEC Research Institute - Fellow\"\n- \"AT&T Labs-Research - Department Head, Image Processing Research\"\n- \"AT&T Bell Laboratories - Member of Technical Staff, Adaptive Systems Research Department\"\n\n## Category Evaluations\n### Awards\n- Rating: high\n- Justification: The applicant has received multiple prominent awards indicating a high level of achievement in their field. Specifically, they have won the Turing Award and the Princess of Asturias Award for Scientific Research, both of which are acknowledged as extraordinary. Additionally, the IEEE Neural Network Pioneer Award and the Chevalier (Knight) of the French Legion of Honour further underline their accomplishments. These awards demonstrate sustained national and international recognition, fulfilling a crucial requirement for the O-1A visa category.\n- Information used:\n  - \"Turing Award (2018)\"\n  - \"IEEE Neural Network Pioneer Award (2014)\"\n  - \"Princess of Asturias Award for Scientific Research (2022)\"\n  - \"Chevalier (Knight) of the French Legion of Honour (2023)\"\n\n### Membership\n- Rating: high\n- Justification: The applicant is a member of three prestigious institutions: the US National Academy of Sciences, the US National Academy of Engineering, and the French Académie des Sciences. Membership in these organizations is highly selective and recognizes individuals who have made significant contributions to science and engineering. This demonstrates a level of expertise and achievement that aligns with the 'extraordinary ability' standard required for an O-1A visa.\n- Information used:\n  - \"Member, US National Academy of Sciences\"\n  - \"Member, US National Academy of Engineering\"\n  - \"Member, French Acad\\u00e9mie des Sciences\"\n\n### Press\n- Rating: high\n- Justification: The applicant is mentioned in several high-profile media outlets: New York Times, Washington Post, Wall Street Journal, and CNN. The 'extraordinary' label is present in two instances, specifically in articles from the New York Times and CNN, which implies a high citation count, venue reputation, or significant coverage. These indicators suggest that the applicant has garnered substantial media attention and recognition, fulfilling the criteria for extraordinary ability in the context of media coverage.\n- Information used:\n  - \"New York Times article with 'extraordinary' label\"\n  - \"Washington Post article\"\n  - \"Wall Street Journal article\"\n  - \"CNN article with 'extraordinary' label\"\n\n### Judging\n- Rating: low\n- Justification: The evaluation for the Judging category is based on the applicant's participation as a judge of the work of others in the field. Since no relevant data has been provided regarding the applicant's judging activities, there is no evidence to support that the applicant has served in such a capacity. Therefore, based solely on the provided information, the applicant's chances of qualifying for the O-1A visa under the Judging criterion are low.\n- Information used:\n\n### Original contribution\n- Rating: high\n- Justification: The applicant's contributions include foundational advancements in Convolutional Neural Networks (CNNs), the Backpropagation learning algorithm, DjVu image compression technology, and Graph Transformer Networks. These technologies are highly influential in the fields of artificial intelligence, machine learning, and image processing. Each of these contributions is widely recognized within the academic and professional communities, denoting a significant original impact. The mention of these specific contributions suggests the applicant has made substantiated and extraordinary advances in their field.\n- Information used:\n  - \"Convolutional Neural Networks (CNNs)\"\n  - \"Backpropagation learning algorithm\"\n  - \"DjVu image compression technology\"\n  - \"Graph Transformer Networks\"\n\n### Scholarly articles\n- Rating: high\n- Justification: The applicant has a robust portfolio of scholarly articles, many of which have high citation counts and are marked as extraordinary. The papers 'Deep Learning' and 'Gradient-based learning applied to document recognition' have over 40,000 citations each, indicating significant influence and recognition in their field. Other publications, such as 'Backpropagation Applied to Handwritten Zip Code Recognition,' 'Character-level Convolutional Networks for Text Classification,' and 'Dimensionality Reduction by Learning an Invariant Mapping' also have substantial citation counts, showcasing the applicant's significant contribution to the academic community. The predominance of articles labeled as extraordinary further supports the applicant's high standing in the field, meeting the O-1A visa criteria for extraordinary ability in scholarly articles.\n- Information used:\n  - \"Deep Learning\"\n  - \"Gradient-based learning applied to document recognition\"\n  - \"Backpropagation Applied to Handwritten Zip Code Recognition\"\n  - \"Character-level Convolutional Networks for Text Classification\"\n  - \"Dimensionality Reduction by Learning an Invariant Mapping\"\n  - \"Most other articles marked as extraordinary\"\n\n### Critical employment\n- Rating: high\n- Justification: The applicant has held critical roles in prestigious organizations, including New York University, where they have served in multiple critical capacities such as Silver Professor at the Courant Institute of Mathematical Sciences, Professor at the Center for Neural Science, and Professor at the Tandon School of Engineering. They have also been the Founding Director of the NYU Center for Data Science and currently hold the Jacob T. Schwartz Chaired Professor in Computer Science position. In addition, their roles at Meta (formerly Facebook) as Vice-President and Chief AI Scientist and Head of AI Research underscore their impact in the field of AI. The applicant also has critical roles at renowned research institutions like NEC Research Institute and AT&T Laboratories. The consistency of critical capacity roles across top-tier institutions in academia and industry strongly indicates that the applicant qualifies for the O-1A visa in the Critical employment category.\n- Information used:\n  - \"New York University - Silver Professor, Courant Institute of Mathematical Sciences\"\n  - \"New York University - Professor, Center for Neural Science\"\n  - \"New York University - Professor, Tandon School of Engineering\"\n  - \"NYU Center for Data Science - Founding Director\"\n  - \"New York University - Jacob T. Schwartz Chaired Professor in Computer Science, NYU's Courant Institute\"\n  - \"Meta - Vice-President and Chief AI Scientist\"\n  - \"Meta AI Research - Head of AI Research\"\n  - \"NEC Research Institute - Fellow\"\n  - \"AT&T Labs-Research - Department Head, Image Processing Research\"\n  - \"AT&T Bell Laboratories - Member of Technical Staff, Adaptive Systems Research Department\"\n\n### High remuneration\n- Rating: low\n- Justification: There is no specific information provided about the applicant's remuneration. The given data for High remuneration is null, which means we have no basis to evaluate whether the applicant receives high remuneration or stands out in this regard compared to peers in their field. As a criterion for the O-1A visa, high remuneration needs clear evidence to support the claim of extraordinary ability or significant achievement, which is absent in this case.\n- Information used:\n\n## Insights\n## Yann André LeCun: Extraordinary Research Capabilities and Contributions\n\n### Educational Background\nYann LeCun holds a PhD in Computer Science from Université Pierre et Marie Curie (1987) and a Diplôme d'Ingénieur from ESIEE Paris (1983). Both qualifications are marked by extraordinary academic performance, reflecting a robust foundation in computational theory and practice.\n\n### Awards and Recognitions\nLeCun's accolades include the prestigious Turing Award in 2018, akin to the Nobel Prize in computer science, recognizing his transformative contributions to deep learning and neural networks. Notably, he also received the IEEE Neural Network Pioneer Award (2014) and the Chevalier (Knight) of the French Legion of Honour (2023), among others. These awards underscore his substantial impact on the field of artificial intelligence.\n\n### Academic Memberships\nLeCun is a respected member of three major academies: the US National Academy of Sciences, the US National Academy of Engineering, and the French Académie des Sciences. These memberships highlight his high regard in the global scientific community.\n\n### Employment History\nLeCun has held key positions at several prestigious institutions:\n- **New York University**: Silver Professor, Jacob T. Schwartz Chaired Professor, Founding Director of NYU's Center for Data Science.\n- **Meta**: Vice-President and Chief AI Scientist, Head of AI Research.\n- **Collège de France, Paris**: Visiting Professor.\n- **NEC Research Institute, Princeton**: Fellow.\n- **AT&T Labs-Research**: Department Head of Image Processing Research.\n- **AT&T Bell Laboratories**: Member of Technical Staff.\n\nHis career trajectory reveals an extensive involvement in both academia and corporate research, fostering important collaborations and advancements in artificial intelligence.\n\n### Groundbreaking Publications\nLeCun's publication record is remarkable, with numerous highly-cited works:\n- \"Deep Learning\" (2015): 40,972 citations.\n- \"Gradient-based learning applied to document recognition\" (1998): 49,193 citations.\n- \"Backpropagation Applied to Handwritten Zip Code Recognition\" (1989): 10,428 citations.\n\nThese publications spotlight his pioneering roles in developing convolutional neural networks (CNNs) and the backpropagation learning algorithm, foundational to modern AI.\n\n### Major Contributions\nLeCun's contributions span several critical areas:\n- **Convolutional Neural Networks (CNNs)**: Central to image and video recognition, revolutionizing how machines learn visual data.\n- **Backpropagation Algorithm**: Facilitated efficient training of deep neural networks.\n- **DjVu Image Compression Technology**: Advanced image file compression, enabling efficient digital image storage and transmission.\n- **Graph Transformer Networks**: Pioneering neural network architectures for graph data, impacting numerous domains.\n\n### Media Coverage\nLeCun's work has been prominently featured in major media outlets such as the New York Times, Washington Post, Wall Street Journal, and CNN. This extensive coverage amplifies his public profile, highlighting his influence on AI at major tech firms like Facebook, and underlining the societal and technological impacts of his research.\n\n### Overall Impact\nLeCun's multidisciplinary influence spans artificial intelligence, machine learning, computer vision, neural networks, and beyond. His pioneering research, esteemed academic roles, and significant public recognition position him as a transformative figure in computer science. His work not only drives academic and corporate innovation but also shapes public perception and policy in AI.\n\nIn summary, Yann LeCun's extraordinary capabilities and contributions have left an indelible mark on multiple research fields and continue to shape the future of artificial intelligence.\n"
+}
