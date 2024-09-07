@@ -56,6 +56,24 @@ The system exposes a FastAPI endpoint for CV processing:
 - **Input**: PDF file (multipart/form-data)
 - **Output**: JSON containing O1A evaluation results with supporting evidence
 
+Example endpoint:
+
+```
+pip install -r requirements.txt
+python fastapi_endpoint.py
+```
+
+Example query:
+```
+sh test_endpoint.sh examples/yann_cv.pdf
+```
+
+Example output:
+
+```
+cat examples/cv_evaluation_result.json
+```
+
 ## Interpreting the Output JSON
 
 See `examples/` for the input and output.
