@@ -227,16 +227,6 @@ def analyze_research_fields(cv_data: Dict[str, Any]) -> List[Dict[str, Any]]:
     
     return field_metrics
 
-import os
-import json
-from typing import List, Dict, Any
-from openai import OpenAI
-
-# Initialize OpenAI client
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
-# ... [Previous functions for analyzing education, awards, publications, and employment remain unchanged] ...
-
 def estimate_field_statistics(fields: List[str]) -> List[Dict[str, Any]]:
     prompt = f"""
     For each of the following research fields, estimate the median annual publication count and median career citation count for researchers in that field. Consider that:
