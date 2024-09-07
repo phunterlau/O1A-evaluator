@@ -57,6 +57,8 @@ The system exposes a FastAPI endpoint for CV processing:
 
 ## Interpreting the Output JSON
 
+See `examples/` for the input and output.
+
 The CV Processor generates a comprehensive JSON file containing the evaluation results. Here's a guide to understanding its structure:
 
 ### Top-level Structure
