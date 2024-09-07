@@ -1,8 +1,8 @@
 import json
 import os
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Union
+from pydantic import BaseModel, Field
 from openai import OpenAI
-from pydantic import BaseModel
 
 # Initialize OpenAI client
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -11,8 +11,8 @@ class CategoryRating(BaseModel):
     category: str
     rating: str
     justification: str
-    information_used: List[str]
-    information_unused: List[str]
+    information_used: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
+    information_unused: List[Union[str, Dict[str, Any]]] = Field(default_factory=list)
 
 class O1AEvaluation(BaseModel):
     name: str
@@ -48,7 +48,7 @@ def evaluate_category(category: str, data: Dict[str, Any]) -> Dict[str, Any]:
     {json.dumps(category_data[category], indent=2)}
     
     Additional context:
-    - For publications, consider the 'extraordinary' label, which indicates high citation count or venue reputation.
+    - For publications and media coverage, consider the 'extraordinary' label, which indicates high citation count, venue reputation, or significance of the coverage.
     - For employment, consider the 'is_critical_capacity' and 'extraordinary' fields.
     - Do not use any preexisting knowledge about the person, only the provided data.
     
@@ -60,8 +60,8 @@ def evaluate_category(category: str, data: Dict[str, Any]) -> Dict[str, Any]:
     {{
         "rating": "low/medium/high",
         "justification": "Your justification here",
-        "information_used": ["List of specific information used"],
-        "information_unused": ["List of specific information not used"]
+        "information_used": ["item1", "item2", ...],
+        "information_unused": ["item1", "item2", ...]
     }}
     """
     
@@ -75,11 +75,11 @@ def evaluate_category(category: str, data: Dict[str, Any]) -> Dict[str, Any]:
     )
     
     evaluation = json.loads(response.choices[0].message.content)
-    evaluation["information_unused"] += unused_fields
+    evaluation["information_unused"] += [field for field in unused_fields]
     return evaluation
 
 def main():
-    data = load_json_data("cv_data.json")
+    data = load_json_data("further_enriched_cv_data.json")
     
     categories = [
         "Awards", "Membership", "Press", "Judging", "Original contribution",

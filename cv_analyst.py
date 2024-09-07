@@ -299,6 +299,58 @@ def analyze_researcher_impact(cv_data: Dict[str, Any], field_statistics: List[Di
         "field_impact_analysis": impact_analysis
     }
 
+def analyze_media_coverage(media_coverage: List[Dict[str, Any]], researcher_name: str) -> List[Dict[str, Any]]:
+    prompt = f"""
+    Analyze the following media coverage for {researcher_name}. Label each item as 'extraordinary' if:
+    1. The report is directly related to the researcher and their work.
+    2. The report appears positive or highlights the researcher's achievements.
+    3. The report is from a reputable source.
+
+    If the information is missing or the criteria are not met, leave the label value as an empty string.
+
+    Media coverage data: {json.dumps(media_coverage)}
+    """
+    
+    response = client.chat.completions.create(
+        model="gpt-4o",
+        messages=[
+            {"role": "system", "content": "You are an expert in analyzing media coverage of scientific researchers."},
+            {"role": "user", "content": prompt}
+        ],
+        tools=[{
+            "type": "function",
+            "function": {
+                "name": "label_media_coverage",
+                "description": "Label media coverage as extraordinary",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "labeled_media_coverage": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "media_name": {"type": "string"},
+                                    "media_domain": {"type": "string"},
+                                    "title": {"type": "string"},
+                                    "url_source": {"type": "string"},
+                                    "description": {"type": "string"},
+                                    "published_time": {"type": "string"},
+                                    "extraordinary": {"type": "string"}
+                                },
+                                "required": ["media_name", "media_domain", "title", "url_source", "description", "published_time", "extraordinary"]
+                            }
+                        }
+                    },
+                    "required": ["labeled_media_coverage"]
+                }
+            }
+        }],
+        tool_choice={"type": "function", "function": {"name": "label_media_coverage"}}
+    )
+    
+    return json.loads(response.choices[0].message.tool_calls[0].function.arguments)["labeled_media_coverage"]
+
 def analyze_cv(cv_data: Dict[str, Any]) -> Dict[str, Any]:
     enriched_cv = cv_data.copy()
     
@@ -306,10 +358,7 @@ def analyze_cv(cv_data: Dict[str, Any]) -> Dict[str, Any]:
     enriched_cv['awards'] = analyze_awards(cv_data['awards'])
     enriched_cv['publications'] = analyze_publications(cv_data['publications'])
     enriched_cv['employment_history'] = analyze_employment(cv_data['employment_history'])
-    
-    field_statistics = estimate_field_statistics(cv_data['predicted_research_fields'])
-    enriched_cv['field_statistics'] = field_statistics
-    enriched_cv['researcher_impact'] = analyze_researcher_impact(cv_data, field_statistics)
+    enriched_cv['media_coverage'] = analyze_media_coverage(cv_data['media_coverage'], cv_data['name'])
     
     return enriched_cv
 
@@ -317,8 +366,8 @@ def generate_insights(enriched_cv: Dict[str, Any]) -> str:
     prompt = f"""
     Generate insights about the researcher's extraordinary capabilities and contributions to the science research community based on the following enriched CV data:
     1. Analyze their education, awards, publications, and employment history.
-    2. Compare their publication rate and citation impact to the estimated median for researchers in their fields.
-    3. Highlight any areas where they significantly outperform the median researcher.
+    2. Consider their media coverage and its implications for their public profile and impact.
+    3. Highlight any areas where they significantly outperform or have made groundbreaking contributions.
     4. Consider their overall impact across multiple research fields if applicable.
 
     Enriched CV data: {json.dumps(enriched_cv)}
@@ -327,7 +376,7 @@ def generate_insights(enriched_cv: Dict[str, Any]) -> str:
     response = client.chat.completions.create(
         model="gpt-4o",
         messages=[
-            {"role": "system", "content": "You are an expert in analyzing academic and research profiles. Provide concise and meaningful insights about the researcher's extraordinary capabilities and contributions, including their impact in different research fields compared to median researchers."},
+            {"role": "system", "content": "You are an expert in analyzing academic and research profiles. Provide concise and meaningful insights about the researcher's extraordinary capabilities and contributions, including their impact in different research fields and public recognition."},
             {"role": "user", "content": prompt}
         ]
     )

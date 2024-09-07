@@ -3,6 +3,8 @@ import os
 import requests
 from fuzzywuzzy import fuzz
 import re
+from urllib.parse import quote
+from time import sleep
 
 def load_cv_data(file_path):
     with open(file_path, 'r') as file:
@@ -95,11 +97,79 @@ def enrich_cv_data(cv_data):
     
     enriched_cv_data = cv_data.copy()
     enriched_cv_data['publications'] = enriched_publications
+    
+    print("Searching for media coverage...")
+    media_coverage = search_media_coverage(cv_data['name'])
+    enriched_cv_data['media_coverage'] = media_coverage
+    
     return enriched_cv_data
+
+def search_media_coverage(person_name):
+    major_media = {
+        "New York Times": "nytimes.com",
+        "Washington Post": "washingtonpost.com",
+        "Wall Street Journal": "wsj.com",
+        "CNN": "cnn.com",
+    }
+
+    jina_api_key = os.environ.get("JINA_READER_API_KEY")
+    if not jina_api_key:
+        print("Warning: JINA_READER_API_KEY not found in environment variables. Skipping media coverage search.")
+        return []
+
+    headers = {
+        'Authorization': f'Bearer {jina_api_key}'
+    }
+
+    media_coverage = []
+
+    for media_name, domain in major_media.items():
+        query = f"{person_name} site:{domain}"
+        encoded_query = quote(query)
+        url = f'https://s.jina.ai/{encoded_query}'
+
+        try:
+            response = requests.get(url, headers=headers)
+            response.raise_for_status()
+            results = response.text.split('\n\n')
+
+            for result in results:
+                if result.startswith('['):
+                    lines = result.split('\n')
+                    coverage = {
+                        "media_name": media_name,
+                        "media_domain": domain,
+                        "title": "",
+                        "url_source": "",
+                        "description": "",
+                        "published_time": ""
+                    }
+                    for line in lines:
+                        if line.startswith('[') and '] Title:' in line:
+                            coverage["title"] = line.split('] Title: ', 1)[1]
+                        elif line.startswith('[') and '] URL Source:' in line:
+                            coverage["url_source"] = line.split('] URL Source: ', 1)[1]
+                        elif line.startswith('[') and '] Description:' in line:
+                            coverage["description"] = line.split('] Description: ', 1)[1]
+                        elif line.startswith('[') and '] Published Time:' in line:
+                            coverage["published_time"] = line.split('] Published Time: ', 1)[1]
+                    
+                    if coverage["title"] and coverage["url_source"]:
+                        media_coverage.append(coverage)
+
+        except requests.RequestException as e:
+            print(f"Error searching {media_name}: {str(e)}")
+        sleep(0.5)
+
+    return media_coverage
 
 def main():
     cv_data = load_cv_data('cv_data.json')
     enriched_data = enrich_cv_data(cv_data)
+    
+    print("Searching for media coverage...")
+    media_coverage = search_media_coverage(cv_data['name'])
+    enriched_data['media_coverage'] = media_coverage
     
     with open('enriched_cv_data.json', 'w') as f:
         json.dump(enriched_data, f, indent=2)

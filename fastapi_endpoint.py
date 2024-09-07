@@ -2,7 +2,7 @@ import os
 import traceback
 from fastapi import FastAPI, File, UploadFile, HTTPException
 from fastapi.responses import JSONResponse
-from workflow_driver import process_cv
+from workflow_driver import process_cv, generate_markdown_summary
 import tempfile
 import logging
 
@@ -23,8 +23,14 @@ async def process_cv_endpoint(file: UploadFile = File(...)):
         # Process the CV
         result = process_cv(temp_file_path)
         
-        # Return the O1A evaluation as JSON
-        return JSONResponse(content=result["o1a_evaluation"])
+        # Generate markdown summary
+        summary = generate_markdown_summary(result)
+        
+        # Add the summary to the result
+        result["markdown_summary"] = summary
+        
+        # Return the full output as JSON
+        return JSONResponse(content=result)
     except Exception as e:
         logger.error(f"Error processing CV: {str(e)}")
         logger.error(traceback.format_exc())
