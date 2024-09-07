@@ -1,5 +1,8 @@
 # CV Processor for O1A Visa Evaluation
 
+Workflow
+![alt text](O1.png)
+
 ## Purpose
 
 This system processes CVs (Curriculum Vitae) and evaluates them for O1A visa eligibility, focusing on individuals with extraordinary ability in sciences, education, business, or athletics. Our system automates the initial evaluation process, providing data-driven insights into a candidate's qualifications across various categories.
