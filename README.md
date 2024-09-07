@@ -52,7 +52,7 @@ The system exposes a FastAPI endpoint for CV processing:
 
 - **Endpoint**: `/process_cv/`
 - **Method**: POST
-- **Input**: PDF file (multipart/form-data) and optional Google Scholar profile URL
+- **Input**: PDF file (multipart/form-data)
 - **Output**: JSON containing O1A evaluation results with supporting evidence
 
 ## Interpreting the Output JSON
