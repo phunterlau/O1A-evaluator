@@ -55,6 +55,89 @@ The system exposes a FastAPI endpoint for CV processing:
 - **Input**: PDF file (multipart/form-data) and optional Google Scholar profile URL
 - **Output**: JSON containing O1A evaluation results with supporting evidence
 
+## Interpreting the Output JSON
+
+The CV Processor generates a comprehensive JSON file containing the evaluation results. Here's a guide to understanding its structure:
+
+### Top-level Structure
+
+1. `raw_data`: Contains all the extracted and enriched information from the CV.
+2. `o1a_evaluation`: Holds the detailed evaluation for each O1A category.
+3. `qualifying_achievements`: A list of key achievements supporting the O1A application.
+4. `overall_rating`: A summary rating of the applicant's qualification for O1A visa.
+5. `insights`: A detailed analysis of the applicant's qualifications and achievements.
+6. `markdown_summary`: A formatted summary of the evaluation, suitable for quick review.
+
+### Raw Data
+
+The `raw_data` section includes:
+
+- Basic information (name, email)
+- Education history
+- Awards and honors
+- Academic memberships
+- Publications with citation counts
+- Patents, licenses, and copyrights
+- Employment history
+- Media coverage
+- Predicted research fields
+
+### O1A Evaluation
+
+The `o1a_evaluation` section provides:
+
+- Ratings for each of the 8 O1A categories:
+  1. Awards
+  2. Membership
+  3. Press
+  4. Judging
+  5. Original contribution
+  6. Scholarly articles
+  7. Critical employment
+  8. High remuneration
+
+For each category, you'll find:
+- A rating (high, medium, or low)
+- Justification for the rating
+- Information used in the evaluation
+- Information not used (to ensure transparency)
+
+### Qualifying Achievements
+
+This section lists key accomplishments that support the O1A application, serving as a quick reference for standout qualifications.
+
+### Overall Rating
+
+A single word (high, medium, or low) summarizing the applicant's overall qualification for the O1A visa.
+
+### Insights
+
+A detailed narrative analysis of the applicant's qualifications, providing context and highlighting the most significant aspects of their career and achievements.
+
+### Markdown Summary
+
+A formatted summary of the entire evaluation, including:
+- Applicant information
+- Education details
+- Overall O1A qualification rating
+- List of qualifying achievements
+- Detailed category evaluations
+- Insights and analysis
+
+## Using the Output
+
+1. **Quick Assessment**: Refer to the `overall_rating` and `qualifying_achievements` for a rapid evaluation of the applicant's suitability.
+
+2. **Detailed Review**: Examine the `o1a_evaluation` section for in-depth analysis of each category.
+
+3. **Supporting Documentation**: Use the `insights` and `markdown_summary` sections to draft support letters or prepare application materials.
+
+4. **Identifying Strengths and Weaknesses**: Review individual category ratings to identify areas where the application is strongest and where it might need additional support.
+
+5. **Data Verification**: Cross-reference the `raw_data` section with the original CV to ensure accuracy and completeness.
+
+By thoroughly reviewing each section of the output JSON, users can gain a comprehensive understanding of the applicant's qualifications and make informed decisions regarding their O1A visa application.
+
 ## Future Improvements
 
 1. Enhance data enrichment with more accurate citation count searches and validation.
