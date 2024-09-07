@@ -1,0 +1,38 @@
+# PDF processing
+PyPDF2==3.0.1
+
+# API and web framework
+fastapi==0.103.2
+uvicorn==0.23.2
+python-multipart==0.0.6
+
+# Data modeling and validation
+pydantic==2.4.2
+
+# OpenAI API
+openai==1.2.3
+
+# HTTP requests
+requests==2.31.0
+
+# Natural Language Processing (if needed)
+nltk==3.8.1
+
+# Data manipulation (if needed)
+pandas==2.1.1
+
+# Fuzzy string matching
+fuzzywuzzy==0.18.0
+python-Levenshtein==0.21.1
+
+# API client for Semantic Scholar (if not using requests directly)
+semanticscholar==0.5.0
+
+# JSON handling (built-in, no need to install)
+# import json
+
+# Environment variables
+python-dotenv==1.0.0
+
+# Testing (optional, for development)
+pytest==7.4.2
